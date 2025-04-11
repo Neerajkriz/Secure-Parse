@@ -1,10 +1,10 @@
-# 🔐 SecureParse
+SecureParse
 
 SecureParse is a privacy-focused Natural Language Processing (NLP) tool that automatically detects, evaluates, and redacts Personally Identifiable Information (PII) from documents and datasets.
 
 ---
 
-## 🚀 Features
+## Features
 
 - 🔍 Custom Named Entity Recognition (NER) for detecting PII entities  
 - 🛡️ Secure data redaction and masking  
@@ -14,7 +14,7 @@ SecureParse is a privacy-focused Natural Language Processing (NLP) tool that aut
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 📦 SecureParse/
@@ -31,7 +31,7 @@ SecureParse is a privacy-focused Natural Language Processing (NLP) tool that aut
 
 ---
 
-## ⚙️ Installation
+##  Installation
 
 ```bash
 # Clone the repository
@@ -48,7 +48,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🧠 Tech Stack
+## Tech Stack
 
 - Python 3.x  
 - spaCy / Presidio  
@@ -59,7 +59,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🧪 How to Use
+##  How to Use
 
 1. **Train your custom NER model**
    ```bash
@@ -83,7 +83,7 @@ pip install -r requirements.txt
 
 ---
 
-## 📈 Sample Visualizations
+## Sample Visualizations
 
 - NER Model Performance Charts  
 - Precision/Recall Graphs  
@@ -91,19 +91,19 @@ pip install -r requirements.txt
 
 ---
 
-## 📃 License
+## License
 
 This project is licensed under the MIT License. See `LICENSE` for more information.
 
 ---
 
-## 🙋‍♂️ Author
+##  Author
 
 **Neeraj Krishna**  
 [GitHub](https://github.com/Neerajkriz)
 
 ---
 
-## 🌟 Star this repo
+##  Star this repo
 
 If you found SecureParse useful, please give it a ⭐️ on GitHub. Your support helps!
