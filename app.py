@@ -35,7 +35,7 @@ anonymizer = AnonymizerEngine()
 
 # ✅ Function to send anonymized text to Gemini API
 def send_to_gemini(anonymized_text):
-    GEMINI_API_KEY = "AIzaSyDiYWwgGGku8ZrUDB5u8qOuO54XI7wdtwo"  # 🔹 Replace with your actual API key
+    GEMINI_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"  # 🔹 Replace with your actual API key
 
     url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={GEMINI_API_KEY}"
     
