@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureParse</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 60%;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* SecureParse Title */
+        h1 {
+            font-size: 40px;
+            font-weight: bold;
+            color: #facc15;
+            margin-bottom: 20px;
+        }
+
+        /* Input Field */
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            font-size: 18px;
+            background: white;
+            color: black;
+            resize: none;
+        }
+
+        /* Submit Button */
+        button {
+            padding: 10px 20px;
+            background: #facc15;
+            color: black;
+            border: none;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #eab308;
+        }
+
+        /* Output Box */
+        .output {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        /* Output Headings */
+        .output h2 {
+            font-size: 22px;
+            color: #facc15;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SecureParse</h1>
+        <form method="POST">
+            <textarea name="input_text" placeholder="Enter text to analyze for PII..." required></textarea>
+            <button type="submit">Process</button>
+        </form>
+
+        {% if anonymized_text %}
+            <div class="output">
+                <h2>🔒 Anonymized Text</h2>
+                <p>{{ anonymized_text }}</p>
+            </div>
+
+            <div class="output">
+                <h2>📩 Gemini API Response (Anonymized)</h2>
+                <p>{{ gemini_response }}</p>
+            </div>
+
+            <div class="output">
+                <h2>🔓 Gemini API Response (De-Anonymized)</h2>
+                <p>{{ de_anonymized_text }}</p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
